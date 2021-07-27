@@ -1,5 +1,5 @@
 //! Trait for verifying digital signatures
-
+use std::prelude::v1::*;
 use crate::{error::Error, Signature};
 
 #[cfg(feature = "digest-preview")]

@@ -1,5 +1,5 @@
 //! Signature error types
-
+use std::prelude::v1::*;
 use core::fmt::{self, Debug, Display};
 
 #[cfg(feature = "std")]
