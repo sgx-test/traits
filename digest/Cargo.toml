@@ -16,9 +16,11 @@ generic-array = "0.14"
 blobby = { version = "0.2", optional = true }
 
 [features]
+default = ["alloc","mesalock_sgx"]
 alloc = []
-std = ["alloc"]
+std = ["alloc","mesalock_sgx"]
 dev = ["blobby"]
+mesalock_sgx = ["sgx_tstd"]
 
 [package.metadata.docs.rs]
 all-features = true
